@@ -11,7 +11,7 @@ from mutagen.mp3 import MP3
 from mutagen.mp4 import MP4
 from mutagen.id3 import ID3, ID3NoHeaderError, APIC
 from io import BytesIO
-from PIL import Image
+import PIL.Image as Image
 from urllib.parse import quote
 
 def extract_and_save_album_art_mp3(file_path, album_dir):
