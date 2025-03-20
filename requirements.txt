@@ -1,0 +1,6 @@
+mutagen>=1.45.1
+Pillow>=9.0.0
+requests>=2.27.1
+
+# Optional - for building Windows executables
+# cx_Freeze>=6.10; platform_system=="Windows" 
