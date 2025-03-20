@@ -253,4 +253,58 @@ Extracted Music/
 - Use the --force option to override duplicate detection and overwrite existing files
 - The --find-unknowns option helps organize songs that were initially placed in "Unknown Album" folders
 - Web searches are rate-limited to respect the API provider's terms of service
-- You can see all available options by running `python I-MusicExtractor.py --help` 
+- You can see all available options by running `python I-MusicExtractor.py --help`
+
+## Quick Launch
+
+There are several ways to launch the I-MusicExtractor application:
+
+### Native Applications
+- **macOS**: Use the `I-MusicExtractor.app` in the `dist` directory. You can copy this to your Applications folder for easy access.
+
+### Script Launchers
+- **Windows**: Double-click on `I-MusicExtractor.bat` in File Explorer
+- **macOS**: Double-click on `I-MusicExtractor.command` in Finder
+- **All platforms**: Run `python run_app.py` or `./run_app.py` from the terminal/command prompt
+
+## Building Native Applications
+
+### macOS Application
+To build the standalone macOS application:
+
+1. Install PyInstaller:
+```
+pip install pyinstaller
+```
+
+2. Create the macOS icon (if not already done):
+```
+python create_macos_icon.py
+```
+
+3. Build the application:
+```
+pyinstaller I-MusicExtractor.spec
+```
+
+4. The application will be created in the `dist` directory as `I-MusicExtractor.app`
+
+### Windows Application
+To build the standalone Windows application:
+
+1. Install PyInstaller:
+```
+pip install pyinstaller
+```
+
+2. Create the Windows icon (if not already done):
+```
+python create_windows_icon.py
+```
+
+3. Build the application:
+```
+pyinstaller I-MusicExtractor-Windows.spec
+```
+
+4. The executable will be created in the `dist/I-MusicExtractor` directory as `I-MusicExtractor.exe` 
